@@ -580,13 +580,9 @@
         </div>
         <p class="card-description">Cria ponto de restauração, backup do registro e aplica 35+ otimizações em uma única janela oculta.</p>
         <div class="card-actions">
-          <button class="btn btn-primary btn-small" onclick="runPanel()">
-            <span>▶️</span>
-            <span>Executar Agora</span>
-          </button>
-          <button class="btn btn-secondary btn-small" onclick="downloadScript('KelvenOptimizer.ps1')">
+          <button class="btn btn-primary btn-small" onclick="downloadScript('gaming/KelvenOptimizer.ps1')">
             <span>💾</span>
-            <span>Baixar Script</span>
+            <span>Baixar Painel</span>
           </button>
         </div>
       </div>
@@ -618,7 +614,7 @@
     function showNotification(){alert('🕗 KelvenOptimizer - Em breve! Aguarde o lançamento oficial.');}
     function notifyMe(){localStorage.setItem('kelvenoptimizer-notify','true');alert('🔔 Você será notificado quando o KelvenOptimizer for lançado!');}
     /* ----------  DOWNLOAD  ---------- */
-    const BASE='https://raw.githubusercontent.com/kelvenapk/kelvenoptimizer-site/main/scripts/';
+    const BASE='https://kelvenapk.github.io/site-kelven-optimizer/';
     function downloadScript(path){
       if(!confirm('⚠️ Você vai baixar um script de otimização.\n✅ Crie um ponto de restauração antes de executar.\n\nDeseja continuar?'))return;
       fetch(BASE+path)
@@ -637,17 +633,6 @@
         .catch(()=>alert('❌ Erro ao baixar o script. Verifique sua conexão.'));
     }
     /* ----------  PAINEL  ---------- */
-    function runPanel(){
-      if(!confirm('▶️ O Painel será executado com privilégios de administrador.\n✅ Clique em "Sim" e aguarde a janela de PowerShell.'))return;
-      fetch(BASE+'KelvenOptimizer.ps1')
-        .then(r=>r.blob())
-        .then(blob=>{
-          const url=URL.createObjectURL(blob);
-          const psCmd=`powershell -ExecutionPolicy Bypass -WindowStyle Hidden -Command "Start-Process powershell '-ExecutionPolicy Bypass -File \\"${url}\\"' -Verb RunAs"`;
-          window.open('ps1launcher:'+psCmd); // fallback simples
-          alert('✅ Painel iniciado! A janela aparecerá em instantes.');
-        });
-    }
     function scrollToPainel(){
       document.getElementById('painel').scrollIntoView({behavior:'smooth'});
     }
