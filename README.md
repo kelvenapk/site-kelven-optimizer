@@ -19,23 +19,6 @@
 
 ---
 
-## 📂 ESTRUTURA DO REPOSITÓRIO
-kelvenoptimizer-site/
-├── index.html                 # Interface futurista
-├── LICENSE                    # MIT
-├── README.md                  # Este arquivo
-├── scripts/
-│   ├── basic/                 # Seguro para todos
-│   ├── intermediate/          # Requer conhecimento
-│   ├── advanced/              # Alto risco
-│   ├── gaming/                # e-Sports (Valorant, CS2, Fortnite...)
-│   ├── workstation/           # Adobe, Blender, Resolve
-│   └── KelvenOptimizer.ps1    # Painel completo (backup + 35 tweaks)
-└── assets/
-├── icon.png
-└── banner.webp
-
----
 
 ## 🎯 PAINEL KELVENOPTIMIZER
 Script **tudo-em-um**:  
