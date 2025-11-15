@@ -1,4 +1,4 @@
-# 🇧🇷 KelvenOptimizer v2.1  
+# 🇧🇷 KelvenOptimizer v2.0  
 **35+ otimizações reais para Windows 10/11 – do básico ao kernel.**
 
 &gt; ⚡ Maximize performance, reduza latência e elimine travamentos com estética futurista.
