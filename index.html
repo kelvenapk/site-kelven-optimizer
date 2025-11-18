@@ -16,6 +16,7 @@
             background: #0a0a0a;
             color: #fff;
             overflow-x: hidden;
+            backdrop-filter: blur(1px);
         }
 
         /* Animated Background */
@@ -221,9 +222,9 @@
         }
 
         .feature-card {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: 20px;
             padding: 35px;
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -286,7 +287,8 @@
 
         /* One Click Section */
         .one-click-section {
-            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1));
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(168, 85, 247, 0.15));
+            backdrop-filter: blur(30px);
             border: 1px solid rgba(99, 102, 241, 0.3);
             border-radius: 30px;
             padding: 80px 60px;
@@ -411,6 +413,7 @@
             .section-title { font-size: 2em; }
             .features-grid { grid-template-columns: 1fr; }
             .one-click-section { padding: 40px 20px; }
+            .logo-glow { font-size: 4em; }
         }
 
         /* Scroll indicator */
